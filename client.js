@@ -19,7 +19,32 @@ const connect = function() {
     console.log('connected!');
     conn.write('Name: YS');
   });
+
   
+  // conn.on('connect', () => {
+  //   setInterval(()=>{
+  //     // conn.write('Move: up');
+  //   }, 50)
+  // });
+
+  // conn.on('connect', () => {
+  //   setInterval(()=>{
+  //     conn.write('Move: down');
+  //   }, 100)  
+  // });
+
+  // conn.on('connect', () => {
+  //   setInterval(()=>{
+  //    conn.write('Move: left');
+  //   }, 150) 
+  // });
+
+  // conn.on('connect', () => {
+  //   setInterval(()=>{
+  //     conn.write('Move: right');
+  //   }, 200) 
+  // });
+
   // conn.on((data) => {
   //   if (data === 'w') {
   //     // client.end();
