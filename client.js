@@ -13,6 +13,12 @@ const connect = function() {
   conn.on('data', (data) => {
     console.log('Server says: ', data);
   });
+
+  // getting a message from a server
+  conn.on('connect', () => {
+    console.log('connected!');
+    conn.write('Name: YS');
+  });
   
   // conn.on((data) => {
   //   if (data === 'w') {
